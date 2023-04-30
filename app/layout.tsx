@@ -16,7 +16,7 @@ export default function RootLayout({
           <br/>
         </div>
       </header>
-  );
+  )
   const footer = (
       <footer>
         <h3>
@@ -24,7 +24,7 @@ export default function RootLayout({
           <p>developed by dasog@naver.com</p>
         </h3>
       </footer>
-  );
+  )
 
   return (
       <html lang="en">
@@ -34,6 +34,6 @@ export default function RootLayout({
       {footer}
       </body>
       </html>
-  );
+  )
 
 }

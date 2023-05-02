@@ -1,4 +1,5 @@
 import Link from "next/link"
+import "../styles/globals.css"
 
 export const metadata = {
   title: 'Next.js',
@@ -12,19 +13,19 @@ export default function RootLayout({
 }) {
     const header = (
         <header>
-            <div>
+            <div className="text-center bg-indigo-700 p-8 my-6 rounded-md">
                 <Link href="/">
-                    <h1>One by One</h1>
+                    <h1 className="text-2xl font-mono text-white">
+                        O3O blog
+                    </h1>
                 </Link>
-                <p>Well Come My Blog</p>
-                <br/>
+                <p className="text-gray-200">Welcome My Blog</p>
             </div>
         </header>
     )
     const footer = (
         <footer>
-            <h3>
-                <br/>
+            <h3 className="border-t border-gray-700 mt-6 py-6 text-center">
                 <p>developed by dasog@naver.com</p>
             </h3>
         </footer>
@@ -33,9 +34,11 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body>
-        {header}
-        {children}
-        {footer}
+        <div className="mx-auto max-w-2xl px-6">
+            {header}
+            {children}
+            {footer}
+        </div>
         </body>
         </html>
     )

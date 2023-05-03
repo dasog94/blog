@@ -14,6 +14,7 @@ export default function RootLayout({
     const header = (
         <header>
             <div className="text-center bg-indigo-700 p-8 my-6 rounded-md">
+                <Image src="/logo.png" width={40} height={40} alt={"It need to be fixed"} className="mx-auto" />
                 <Link href="/">
                     <h1 className="text-2xl font-mono text-white">
                         O3O blog

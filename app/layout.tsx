@@ -1,5 +1,6 @@
 import Link from "next/link"
 import "../styles/globals.css"
+import Image from "next/image"
 
 export const metadata = {
   title: 'Next.js',
@@ -16,7 +17,7 @@ export default function RootLayout({
             <div className="text-center bg-indigo-700 p-8 my-6 rounded-md">
                 <Image src="/logo.png" width={40} height={40} alt={"It need to be fixed"} className="mx-auto" />
                 <Link href="/">
-                    <h1 className="text-2xl font-mono text-white">
+                    <h1 className="text-2xl font-mono text-white mt-4">
                         O3O blog
                     </h1>
                 </Link>
@@ -26,7 +27,7 @@ export default function RootLayout({
     )
     const footer = (
         <footer>
-            <h3 className="border-t border-gray-700 mt-6 py-6 text-center">
+            <h3 className="border-t border-gray-700 mt-12 py-6 text-center">
                 <p>developed by dasog@naver.com</p>
             </h3>
         </footer>

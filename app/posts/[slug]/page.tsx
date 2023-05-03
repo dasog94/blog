@@ -29,7 +29,14 @@ const PostPage = ({params}: Props) => {
     const post = getPostContent(slug)
     return (
         <div>
-            <h1>{post.data.title}</h1>
+            <div className="my-8 text-center">
+                <h1 className="text-2xl font-bold">
+                    {post.data.title}
+                </h1>
+                <p className="text-gray-400 mt-2">
+                    {post.data.date}
+                </p>
+            </div>
             <article className="prose lg:prose-xl">
                 <Markdown>{post.content}</Markdown>
             </article>
